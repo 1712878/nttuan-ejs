@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../elements/header %>
+</head>
+
+<body>
+    <% include ../../elements/navbar %>
+    <main class="page payment-page">
+        <section class="clean-block payment-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Thông tin giao hàng</h2>
+                    <p>Kiểm tra lại đơn hàng và điền đầy đủ thông tin để chúng tôi giao hàng đến bạn</p>
+                </div>
+                <form>
+                    <div class="products">
+                        <h3 class="title">Thông tin đơn hàng</h3>
+                        <div class="item"><span class="price">$120</span>
+                            <p class="item-name">Iphone SE</p>
+                            <p class="item-description">32GB/4GB</p>
+                        </div>
+                        <div class="item"><span class="price">$120</span>
+                            <p class="item-name">Iphone 6s plus</p>
+                            <p class="item-description">64GB/4GB</p>
+                        </div>
+                        <div class="total"><span>Tồng cộng</span><span class="price">$420</span></div>
+                    </div>
+                    <div class="card-details">
+                        <h3 class="title">Địa chỉ nhận hàng</h3>
+                        <div class="form-row">
+                            <div class="col-12">
+                                <div class="form-group"><label for="name">người nhận</label><input class="form-control item" type="text" id="name" value="Nguyễn Thọ Tuấn"></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group"><label for="name">Số điện thoại</label><input class="form-control item" type="text" id="name" value="0987654321"></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group"><label for="name">Địa chỉ</label><input class="form-control item" type="text" id="name" value="67/35, Xô Viết Nghệ Tinh, P17, Bình Thạnh"></div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group"><a class="btn btn-primary btn-block" href="activity">Giao cho tôi</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <% include ../../elements/footer %>
+    <% include ../../elements/script %>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../elements/header %>
+</head>
+
+<body>
+    <% include ../../elements/navbar %>
+    <main class="page login-page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Quên mật khẩu !</h2>
+                    <p>Nhập email bạn đã đăng kí, chúng tôi sẽ gửi liên kết đặt lại mật khẩu tới email của bạn</p>
+                </div>
+                <form>
+                    <div class="form-group"><label for="email">Email</label><input class="form-control item" type="email" id="email"></div>
+                    <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Đặt lại mật khẩu</button></div>
+                    <div class="form-group text-center"><a href="login">Đăng nhập</a></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <% include ../../elements/footer %>
+    <% include ../../elements/script %>
+</body>
+
+</html>

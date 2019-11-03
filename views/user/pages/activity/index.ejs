@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../elements/header %>
+</head>
+
+<body>
+    <% include ../../elements/navbar %>
+    <main class="page contact-us-page">
+        <div class="container">
+            <div class="row my-3">
+                <div class="col">
+                    <h1 class="text-center text-info">Lịch sử quá trình và trạng thái đơn hàng</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="modal fade" role="dialog" tabindex="-1" id="activity-detail">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Thông tin vận chuyển</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button></div>
+                                <div class="modal-body">
+                                    <h4 class="text-danger"><strong>Thông tin vận đơn</strong></h4>
+                                    <p><strong>Người nhận:</strong><br>Họ tên: **************** Tuấn<br>Số điện thoại: 8497***3208<br>Địa chỉ: *****, Quận Bình Thạnh, TP Hồ Chí Minh<br><br><strong>Người gửi:</strong><br>Họ tên: ****.dau<br>Số điện thoại:
+                                        *******3691<br>Địa chỉ: *****, Gia Lâm, Hà Nội<br><br><strong>Thông tin đơn hàng:</strong><br>Mã đơn hàng của KH: VN194555433445E<br>Tiền thu hộ: 0 VNĐ<br>Trả ship: Người gửi<br></p>
+                                    <h4 class="text-danger"><strong>Logs</strong></h4>
+                                    <p>7:30, ngày 14/10/19: Xác nhận bưu tá đi lấy hàng10:01, ngày 14/10/19: Bưu tá báo trạng thái từ Đang lấy hàng sang Đã lấy hàng10:12, ngày 14/10/19: từ&nbsp;<strong>Đã điều phối lấy hàng/Đang lấy hàng</strong>&nbsp;sang&nbsp;<strong>Đã lấy hàng/Đã nhập kho</strong>11:19,
+                                        ngày 14/10/19: Nhập kho trung chuyển11:29, ngày 14/10/19: Xuất đến kho Long Biên11:50, ngày 14/10/19: Nhập kho trung chuyển11:54, ngày 14/10/19: Xuất đến kho LV - Hàm Nghi13:12, ngày 14/10/19: Nhập kho trung chuyển16:40,
+                                        ngày 14/10/19: Xuất đến kho Sân Bay Nội Bài17:58, ngày 14/10/19: Nhập kho trung chuyển17:58, ngày 14/10/19: Nhập kho sây bay3:16, ngày 15/10/19: Xuất đến kho Tân Bình5:34, ngày 15/10/19: Nhập kho trung chuyển9:10,
+                                        ngày 15/10/19: Xuất đến kho Bình Thạnh 210:18, ngày 15/10/19: Nhập kho trung chuyển14:21, ngày 15/10/19: Xác nhận bưu tá đi giao hàng18:15, ngày 15/10/19: Bưu tá báo trạng thái từ Đang giao hàng sang Đã giao hàng
+                                        toàn bộ18:36, ngày 15/10/19: từ&nbsp;<strong>Đã điều phối giao hàng/Đang giao hàng</strong>&nbsp;sang&nbsp;<strong>Đã giao hàng/Chưa đối soát</strong>0:19, ngày 17/10/19: Đơn hàng được đưa vào danh sách chuẩn bị
+                                        đối soát<br>0:42, ngày 17/10/19: Đã xuất hóa đơn đối soát&nbsp;<strong>BC332145155.S14268.171019</strong><br></p>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th>ID đơn hàng</th>
+                                    <th>Tồng tiền</th>
+                                    <th>Trạng thái</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>43543654353</td>
+                                    <td>420$</td>
+                                    <td>Chưa giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>32453543543</td>
+                                    <td>160$</td>
+                                    <td>Đã giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>43543645654</td>
+                                    <td>34$</td>
+                                    <td>Đã giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>23435435454</td>
+                                    <td>160$</td>
+                                    <td>Đã giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>812011030634</td>
+                                    <td>54$</td>
+                                    <td>Chưa giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>34543432543</td>
+                                    <td>154$</td>
+                                    <td>Đang giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>812011030634</td>
+                                    <td>100$</td>
+                                    <td>Đang giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>32543546434</td>
+                                    <td>154$</td>
+                                    <td>Chưa giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>0878787654</td>
+                                    <td>23$</td>
+                                    <td>Đang giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>57657346546</td>
+                                    <td>34$</td>
+                                    <td>Đang giao hàng</td>
+                                    <td><button class="btn btn-danger btn-sm" type="button" data-target="#activity-detail" data-toggle="modal">Xem chi tiết</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <% include ../../elements/footer %>
+    <% include ../../elements/script %>
+</body>
+
+</html>
