@@ -5,9 +5,6 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('admin/pages/home/index');
 });
-router.get('/admin-detail', function(req, res, next) {
-  res.render('admin/pages/admin-detail/index');
-});
 router.get('/change-user-info', function(req, res, next) {
   res.render('admin/pages/change-user-info/index');
 });
