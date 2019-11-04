@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../elements/header %>
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <% include ../../elements/nav-left %>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <% include ../../elements/nav-top %>
+            </div>
+            <!-- begin content value -->
+            <div class="container-fluid">
+                <header></header>
+                <div class="row">
+                    <div class="col">
+                        <div class="card shadow">
+                            <div class="card-header py-3">
+                                <p class="text-primary m-0 font-weight-bold">Thống kê top 10&nbsp;</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <span>Chọn thời gian</span>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-control form-control-sm custom-select custom-select-sm">
+                                            <option value="Ngày" selected="">Ngày</option>
+                                            <option value="Tuần">Tuần</option>
+                                            <option value="Tháng">Tháng</option>
+                                            <option value="Năm">Năm</option>
+                                            <option value="Quý">Quý</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <span>Top 10 theo</span>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-control form-control-sm custom-select custom-select-sm">
+                                            <option value="Gian hàng">Gian hàng</option>
+                                            <option value="Mặt hàng" selected="">Mặt hàng</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 text-nowrap"></div>
+                                    <div class="col-md-6">
+                                        <div class="text-md-right dataTables_filter" id="dataTable_filter">
+                                            <label>
+                                                <input type="search" class="form-control form-control-sm" aria-controls="dataTable"
+                                                    placeholder="Tìm kiếm">
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="table-responsive table mt-2" id="dataTable" role="grid"
+                                    aria-describedby="dataTable_info">
+                                    <table class="table dataTable my-0" id="dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Mặt hàng</th>
+                                                <th>Đơn giá</th>
+                                                <th>Số lượng bán</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Iphone 7</td>
+                                                <td>$162,700</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Laptop</td>
+                                                <td>$132,000
+                                                    <br>
+                                                </td>
+                                                <td>87</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>S8 plus</td>
+                                                <td>$86,000
+                                                    <br>
+                                                </td>
+                                                <td>67</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Tai nghe</td>
+                                                <td>$14,600
+                                                    <br>
+                                                </td>
+                                                <td>45</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Iphone 8</td>
+                                                <td>$152,700
+                                                    <br>
+                                                </td>
+                                                <td>43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>Laptop 2</td>
+                                                <td>$199,200
+                                                    <br>
+                                                </td>
+                                                <td>32</td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>S8</td>
+                                                <td>$83,000
+                                                    <br>
+                                                </td>
+                                                <td>12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>S7 Edge</td>
+                                                <td>$14,600
+                                                    <br>
+                                                </td>
+                                                <td>4</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td>Iphone X</td>
+                                                <td>$193,200
+                                                    <br>
+                                                </td>
+                                                <td>2</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td>Laptop 3</td>
+                                                <td>$134,000
+                                                    <br>
+                                                </td>
+                                                <td>1</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td>
+                                                    <strong>STT</strong>
+                                                </td>
+                                                <td>
+                                                    <strong>Mặt hàng</strong>
+                                                </td>
+                                                <td>
+                                                    <strong>Đơn giá</strong>
+                                                </td>
+                                                <td>
+                                                    <strong>Số lượng bán</strong>&nbsp;
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end content value -->
+            <% include ../../elements/footer %>
+        </div>
+        <% include ../../elements/scroll-top %>
+    </div>
+    <% include ../../elements/script %>
+</body>
+
+</html>

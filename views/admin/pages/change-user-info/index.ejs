@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <% include ../../elements/header %>
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <% include ../../elements/nav-left %>
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+                <% include ../../elements/nav-top %>
+            </div>
+            <!-- begin content value -->
+            <div class="container-fluid">
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="card shadow mb-3">
+                            <div class="card-header py-3">
+                                <p class="text-primary m-0 font-weight-bold">Thay đổi thông tin thành viên</p>
+                            </div>
+                            <div class="card-body">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="username">
+                                                    <strong>Tài khoản</strong>
+                                                </label>
+                                                <input class="form-control" type="text" value="nvahcmus" name="username" disabled="">
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="email">
+                                                    <strong>Email</strong>
+                                                </label>
+                                                <input class="form-control" type="email" value="nva@gmail.com" name="first_name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <div class="form-group">
+                                                <label for="first_name">
+                                                    <strong>Họ tên</strong>
+                                                </label>
+                                                <input class="form-control" type="text" value="Nguyễn Văn A" name="name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="first_name">
+                                                    <strong>Địa chỉ</strong>
+                                                    <br>
+                                                </label>
+                                                <input class="form-control" type="text" value="67/35 XVNT, P.17, Bình Thạnh"
+                                                    name="address">
+                                            </div>
+                                            <button class="btn btn-primary btn-lg btn-user btn-block" type="button">Cập nhật thông
+                                                tin</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end content value -->
+            <% include ../../elements/footer %>
+        </div>
+        <% include ../../elements/scroll-top %>
+    </div>
+    <% include ../../elements/script %>
+</body>
+
+</html>
